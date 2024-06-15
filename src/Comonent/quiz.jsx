@@ -8,7 +8,7 @@ const Quiz = () => {
   const quizRef = useRef(null);
 
   useEffect(() => {
-    fetch('question.json')
+    fetch('/src/question.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
